@@ -14,7 +14,7 @@ import { Statistics } from '@/components/sections/Statistics';
 import { CTA } from '@/components/sections/CTA';
 import { Footer } from '@/components/sections/Footer';
 
-// Types
+
 interface Feature {
   icon: React.ReactNode;
   title: string;
@@ -42,7 +42,7 @@ interface FooterSection {
 }
 
 export default function Home() {
-  // Features Data
+ 
   const features: Feature[] = [
     {
       icon: <Dumbbell className="w-8 h-8 text-emerald-400" />,

@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Menu, X,  ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
-import logo from '../../public/logo.png';
+import { useState } from "react";
+import { Menu, X, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import logo from "../../public/log.png";
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,28 +17,62 @@ export const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="flex-shrink-0 flex items-center gap-2"
+            className="flex-shrink-0 flex items-center gap-2.5"
           >
-            <div className="w-32 h-32  rounded-lg flex items-center justify-center">
-              <img src={logo.src} alt="Logo" className="w-full h-full object-contain" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-emerald-300 bg-clip-text text-transparent">
-              H A C Group
+            <svg
+              className="w-6 h-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="4"
+                y="10"
+                width="16"
+                height="3.2"
+                rx="1"
+                fill="#C9A24B"
+              />
+              <rect x="4" y="4" width="9" height="3.2" rx="1" fill="white" />
+              <rect
+                x="11"
+                y="16.8"
+                width="9"
+                height="3.2"
+                rx="1"
+                fill="white"
+              />
+            </svg>
+            <span className="text-xl font-medium tracking-tight">
+              <span className="text-white">HAC</span>{" "}
+              <span className="text-neutral-400 font-normal">Group</span>
             </span>
           </motion.div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-neutral-400 hover:text-emerald-400 transition duration-200">
+            <a
+              href="#features"
+              className="text-neutral-400 hover:text-emerald-400 transition duration-200"
+            >
               Features
             </a>
-            <a href="#pricing" className="text-neutral-400 hover:text-emerald-400 transition duration-200">
+            <a
+              href="#pricing"
+              className="text-neutral-400 hover:text-emerald-400 transition duration-200"
+            >
               Pricing
             </a>
-            <a href="#solutions" className="text-neutral-400 hover:text-emerald-400 transition duration-200">
+            <a
+              href="#solutions"
+              className="text-neutral-400 hover:text-emerald-400 transition duration-200"
+            >
               Solutions
             </a>
-            <a href="#community" className="text-neutral-400 hover:text-emerald-400 transition duration-200">
+            <a
+              href="#community"
+              className="text-neutral-400 hover:text-emerald-400 transition duration-200"
+            >
               Community
             </a>
           </div>
@@ -59,7 +93,11 @@ export const Navbar = () => {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 rounded-lg hover:bg-neutral-800 transition"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -72,16 +110,28 @@ export const Navbar = () => {
             className="md:hidden pb-4 border-t border-neutral-800"
           >
             <div className="pt-4 space-y-4">
-              <a href="#features" className="block text-neutral-400 hover:text-emerald-400 transition">
+              <a
+                href="#features"
+                className="block text-neutral-400 hover:text-emerald-400 transition"
+              >
                 Features
               </a>
-              <a href="#pricing" className="block text-neutral-400 hover:text-emerald-400 transition">
+              <a
+                href="#pricing"
+                className="block text-neutral-400 hover:text-emerald-400 transition"
+              >
                 Pricing
               </a>
-              <a href="#solutions" className="block text-neutral-400 hover:text-emerald-400 transition">
+              <a
+                href="#solutions"
+                className="block text-neutral-400 hover:text-emerald-400 transition"
+              >
                 Solutions
               </a>
-              <a href="#community" className="block text-neutral-400 hover:text-emerald-400 transition">
+              <a
+                href="#community"
+                className="block text-neutral-400 hover:text-emerald-400 transition"
+              >
                 Community
               </a>
               <div className="pt-4 space-y-3 border-t border-neutral-800">

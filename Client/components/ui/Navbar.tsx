@@ -1,8 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Menu, X, Dumbbell, ArrowRight } from 'lucide-react';
+import { Menu, X,  ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../../public/logo.png';
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,11 +19,11 @@ export const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0 flex items-center gap-2"
           >
-            <div className="w-8 h-8 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center">
-              <Dumbbell className="w-5 h-5 text-neutral-950" />
+            <div className="w-32 h-32  rounded-lg flex items-center justify-center">
+              <img src={logo.src} alt="Logo" className="w-full h-full object-contain" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-emerald-300 bg-clip-text text-transparent">
-              Everfit
+              H A C Group
             </span>
           </motion.div>
 

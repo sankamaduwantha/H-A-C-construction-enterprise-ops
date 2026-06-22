@@ -12,7 +12,7 @@ export const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur-xl border-b border-neutral-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+         
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -50,39 +50,31 @@ export const Navbar = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            <a
-              href="#features"
-              className="text-neutral-400 hover:text-emerald-400 transition duration-200"
-            >
-              Features
+          <div className="hidden md:flex items-center gap-12">
+            <a href="#features" className="relative group text-neutral-300 text-xs tracking-widest uppercase font-light">
+              Home
+              <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </a>
-            <a
-              href="#pricing"
-              className="text-neutral-400 hover:text-emerald-400 transition duration-200"
-            >
-              Pricing
+            <a href="#pricing" className="relative group text-neutral-300 text-xs tracking-widest uppercase font-light">
+              About
+              <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </a>
-            <a
-              href="#solutions"
-              className="text-neutral-400 hover:text-emerald-400 transition duration-200"
-            >
-              Solutions
+            <a href="#solutions" className="relative group text-neutral-300 text-xs tracking-widest uppercase font-light">
+              Services
+              <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </a>
-            <a
-              href="#community"
-              className="text-neutral-400 hover:text-emerald-400 transition duration-200"
-            >
+            <a href="#community" className="relative group text-neutral-300 text-xs tracking-widest uppercase font-light">
               Community
+              <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </a>
           </div>
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="px-4 py-2 text-neutral-400 hover:text-emerald-400 transition duration-200 font-medium">
+            <button className="px-4 py-2 text-neutral-400 hover:text-amber-200  transition duration-200 font-medium">
               Log In
             </button>
-            <button className="px-6 py-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-neutral-950 font-bold rounded-lg transition duration-200 flex items-center gap-2">
+            <button className="px-6 py-2 bg-gradient-to-r from-amber-200 to-amber-300 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-bold rounded-lg transition duration-200 flex items-center gap-2">
               Start Free Trial
               <ArrowRight className="w-4 h-4" />
             </button>
@@ -112,33 +104,33 @@ export const Navbar = () => {
             <div className="pt-4 space-y-4">
               <a
                 href="#features"
-                className="block text-neutral-400 hover:text-emerald-400 transition"
+                className="block text-neutral-400 hover:text-amber-200 transition"
               >
                 Features
               </a>
               <a
                 href="#pricing"
-                className="block text-neutral-400 hover:text-emerald-400 transition"
+                className="block text-neutral-400 hover:text-amber-200 transition"
               >
                 Pricing
               </a>
               <a
                 href="#solutions"
-                className="block text-neutral-400 hover:text-emerald-400 transition"
+                className="block text-neutral-400 hover:text-amber-200 transition"
               >
                 Solutions
               </a>
               <a
                 href="#community"
-                className="block text-neutral-400 hover:text-emerald-400 transition"
+                className="block text-neutral-400 hover:text-amber-200 transition"
               >
                 Community
               </a>
               <div className="pt-4 space-y-3 border-t border-neutral-800">
-                <button className="w-full px-4 py-2 text-neutral-400 hover:text-emerald-400 transition font-medium text-left">
+                <button className="w-full px-4 py-2 text-neutral-400 hover:text-amber-200 transition font-medium text-left">
                   Log In
                 </button>
-                <button className="w-full px-4 py-2 bg-gradient-to-r from-emerald-500 to-emerald-600 text-neutral-950 font-bold rounded-lg transition">
+                <button className="w-full px-4 py-2 bg-gradient-to-r from-amber-200 to-amber-300 text-neutral-950 font-bold rounded-lg transition">
                   Start Free Trial
                 </button>
               </div>

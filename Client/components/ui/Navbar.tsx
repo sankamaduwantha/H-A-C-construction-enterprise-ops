@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur-xl border-b border-neutral-800">
+    <nav className="fixed top-4  left-1/2 -translate-x-1/2 w-[70%] z-50 bg-neutral-950/40 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
          
@@ -51,28 +51,29 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
-            <a href="#features" className="relative group text-neutral-300 text-xs tracking-widest uppercase font-light">
+            <a href="#features" className="relative group text-neutral-300 text-sm tracking-widest  font-medium">
               Home
               <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </a>
-            <a href="#pricing" className="relative group text-neutral-300 text-xs tracking-widest uppercase font-light">
+            <a href="#pricing" className="relative group text-neutral-300 text-sm tracking-widest  font-medium">
               About
               <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </a>
-            <a href="#solutions" className="relative group text-neutral-300 text-xs tracking-widest uppercase font-light">
+            <a href="#solutions" className="relative group text-neutral-300 text-sm tracking-widest  font-medium">
               Services
               <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </a>
-            <a href="#community" className="relative group text-neutral-300 text-xs tracking-widest uppercase font-light">
-              Community
+            <a href="#community" className="relative group text-neutral-300 text-sm tracking-widest  font-medium">
+              Contact
               <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </a>
           </div>
 
           {/* Action Buttons */}
-          <div className="hidden md:flex items-center gap-4">
-            <button className="px-4 py-2 text-neutral-400 hover:text-amber-200  transition duration-200 font-medium">
+          <div className="hidden md:flex items-center gap-6">
+            <button className="relative group px-4 py-2 text-neutral-300 text-sm tracking-widest  font-light">
               Log In
+              <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
             </button>
             <button className="px-6 py-2 bg-gradient-to-r from-amber-200 to-amber-300 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-bold rounded-lg transition duration-200 flex items-center gap-2">
               Start Free Trial
@@ -126,14 +127,7 @@ export const Navbar = () => {
               >
                 Community
               </a>
-              <div className="pt-4 space-y-3 border-t border-neutral-800">
-                <button className="w-full px-4 py-2 text-neutral-400 hover:text-amber-200 transition font-medium text-left">
-                  Log In
-                </button>
-                <button className="w-full px-4 py-2 bg-gradient-to-r from-amber-200 to-amber-300 text-neutral-950 font-bold rounded-lg transition">
-                  Start Free Trial
-                </button>
-              </div>
+             
             </div>
           </motion.div>
         )}

@@ -71,13 +71,8 @@ export const Navbar = () => {
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center gap-6">
-            <button className="relative group px-4 py-2 text-neutral-300 text-sm tracking-widest  font-light">
-              Log In
-              <span className="absolute bottom-0 left-0 w-0 h-0.25 bg-[#C9A24B] group-hover:w-full transition-all duration-300 origin-left"></span>
-            </button>
             <button className="px-6 py-2 bg-gradient-to-r from-amber-200 to-amber-300 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-bold rounded-lg transition duration-200 flex items-center gap-2">
-              Start Free Trial
-              <ArrowRight className="w-4 h-4" />
+              Contact us
             </button>
           </div>
 

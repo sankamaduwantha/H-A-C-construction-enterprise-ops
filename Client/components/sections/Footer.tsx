@@ -1,6 +1,7 @@
 'use client';
 
-import { Dumbbell, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Dumbbell } from 'lucide-react';
+import { FaFacebook, FaXTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa6';
 
 interface FooterLink {
   label: string;
@@ -36,16 +37,16 @@ export const Footer = ({ sections }: FooterProps) => {
             </p>
             <div className="flex gap-4 mt-6">
               <a href="#" className="p-2 bg-neutral-800 hover:bg-emerald-500/20 rounded-lg transition text-neutral-400 hover:text-emerald-400">
-                <Facebook className="w-5 h-5" />
+                <FaFacebook className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-neutral-800 hover:bg-emerald-500/20 rounded-lg transition text-neutral-400 hover:text-emerald-400">
-                <Twitter className="w-5 h-5" />
+                <FaXTwitter className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-neutral-800 hover:bg-emerald-500/20 rounded-lg transition text-neutral-400 hover:text-emerald-400">
-                <Instagram className="w-5 h-5" />
+                <FaInstagram className="w-5 h-5" />
               </a>
               <a href="#" className="p-2 bg-neutral-800 hover:bg-emerald-500/20 rounded-lg transition text-neutral-400 hover:text-emerald-400">
-                <Linkedin className="w-5 h-5" />
+                <FaLinkedin className="w-5 h-5" />
               </a>
             </div>
           </div>

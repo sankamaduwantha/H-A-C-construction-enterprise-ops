@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import logo from "../../public/log.png";
 
@@ -69,11 +71,48 @@ export const Navbar = () => {
             </a>
           </div>
 
-          {/* Action Buttons */}
-          <div className="hidden md:flex items-center gap-6">
-            <button className="px-6 py-2 bg-gradient-to-r from-amber-200 to-amber-300 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-bold rounded-lg transition duration-200 flex items-center gap-2">
-              Contact us
-            </button>
+          {/* Social Media Icons - Desktop */}
+          <div className="hidden md:flex items-center gap-2">
+            <a
+              href="#"
+              className="group relative p-2.5 text-neutral-400 hover:text-[#C9A24B] hover:scale-110 active:scale-95 transition-all duration-300 rounded-full hover:bg-amber-500/10"
+              aria-label="Facebook"
+            >
+              <FaFacebook className="w-4 h-4" />
+              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+                Facebook
+              </span>
+            </a>
+            <a
+              href="#"
+              className="group relative p-2.5 text-neutral-400 hover:text-[#C9A24B] hover:scale-110 active:scale-95 transition-all duration-300 rounded-full hover:bg-amber-500/10"
+              aria-label="Instagram"
+            >
+              <FaInstagram className="w-4 h-4" />
+              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+                Instagram
+              </span>
+            </a>
+            <a
+              href="#"
+              className="group relative p-2.5 text-neutral-400 hover:text-[#C9A24B] hover:scale-110 active:scale-95 transition-all duration-300 rounded-full hover:bg-amber-500/10"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp className="w-4 h-4" />
+              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+                WhatsApp
+              </span>
+            </a>
+            <a
+              href="#"
+              className="group relative p-2.5 text-neutral-400 hover:text-[#C9A24B] hover:scale-110 active:scale-95 transition-all duration-300 rounded-full hover:bg-amber-500/10"
+              aria-label="TikTok"
+            >
+              <FaTiktok className="w-4 h-4" />
+              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+                TikTok
+              </span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -120,9 +159,41 @@ export const Navbar = () => {
                 href="#community"
                 className="block text-neutral-400 hover:text-amber-200 transition"
               >
-                Community
+                Contact
               </a>
-             
+
+              {/* Mobile Social Media Icons */}
+              <div className="flex items-center gap-4 pt-4 border-t border-neutral-800">
+                <a
+                  href="#"
+                  className="text-neutral-500 hover:text-[#C9A24B] hover:scale-110 transition-all duration-200"
+                  aria-label="Facebook"
+                >
+                  <FaFacebook className="w-5 h-5" />
+                </a>
+                <a
+                  href="#"
+                  className="text-neutral-500 hover:text-[#C9A24B] hover:scale-110 transition-all duration-200"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="#"
+                  className="text-neutral-500 hover:text-[#C9A24B] hover:scale-110 transition-all duration-200"
+                  aria-label="WhatsApp"
+                >
+                  <FaWhatsapp className="w-5 h-5" />
+                </a>
+                <a
+                  href="#"
+                  className="text-neutral-500 hover:text-[#C9A24B] hover:scale-110 transition-all duration-200"
+                  aria-label="TikTok"
+                >
+                  <FaTiktok className="w-5 h-5" />
+                </a>
+              </div>
+
             </div>
           </motion.div>
         )}

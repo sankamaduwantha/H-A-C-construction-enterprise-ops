@@ -78,8 +78,8 @@ export const Navbar = () => {
               className="group relative p-2.5 text-neutral-400 hover:text-[#C9A24B] hover:scale-110 active:scale-95 transition-all duration-300 rounded-full hover:bg-amber-500/10"
               aria-label="Facebook"
             >
-              <FaFacebook className="w-4 h-4" />
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+              <FaFacebook className="w-5 h-5" />
+              <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
                 Facebook
               </span>
             </a>
@@ -88,8 +88,8 @@ export const Navbar = () => {
               className="group relative p-2.5 text-neutral-400 hover:text-[#C9A24B] hover:scale-110 active:scale-95 transition-all duration-300 rounded-full hover:bg-amber-500/10"
               aria-label="Instagram"
             >
-              <FaInstagram className="w-4 h-4" />
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+              <FaInstagram className="w-5 h-5" />
+              <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
                 Instagram
               </span>
             </a>
@@ -98,8 +98,8 @@ export const Navbar = () => {
               className="group relative p-2.5 text-neutral-400 hover:text-[#C9A24B] hover:scale-110 active:scale-95 transition-all duration-300 rounded-full hover:bg-amber-500/10"
               aria-label="WhatsApp"
             >
-              <FaWhatsapp className="w-4 h-4" />
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+              <FaWhatsapp className="w-5 h-5" />
+              <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
                 WhatsApp
               </span>
             </a>
@@ -108,8 +108,8 @@ export const Navbar = () => {
               className="group relative p-2.5 text-neutral-400 hover:text-[#C9A24B] hover:scale-110 active:scale-95 transition-all duration-300 rounded-full hover:bg-amber-500/10"
               aria-label="TikTok"
             >
-              <FaTiktok className="w-4 h-4" />
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
+              <FaTiktok className="w-5 h-5" />
+              <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 text-[10px] text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
                 TikTok
               </span>
             </a>

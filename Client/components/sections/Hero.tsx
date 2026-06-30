@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
-const HERO_IMAGES = ['/images/hero1.jpeg', '/images/hero2.jpeg', '/images/hero3.jpeg', '/images/hero4.jpeg'];
+const HERO_IMAGES = ['/images/hero1.jpeg', '/images/hero2.jpeg', '/images/hero3.jpeg', '/images/hero4.jpg', '/images/hero5.jpeg'];
 
 export const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,7 +64,7 @@ export const Hero = () => {
               src={src}
               alt={`Hero background ${index + 1}`}
               fill
-              className="object-cover"
+              className="object-cover object-center"
               priority={index === 0}
               sizes="100vw"
             />

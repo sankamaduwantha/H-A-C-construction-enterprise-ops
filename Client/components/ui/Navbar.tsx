@@ -11,7 +11,7 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[70%] z-50 bg-neutral-950/40 backdrop-blur-xl ring-1 ring-[#C9A24B]/20 shadow-2xl rounded-full">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[70%] z-50 bg-neutral-950/40 backdrop-blur-xl ring-1 ring-[#C9A24B]/15 shadow-2xl rounded-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
          

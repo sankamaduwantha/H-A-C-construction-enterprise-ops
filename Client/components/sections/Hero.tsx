@@ -174,18 +174,45 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-5">
-            <a
-              href="#"
-              className="w-full sm:w-auto rounded-lg bg-safety-orange px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-black/30 transition-all duration-200 hover:bg-safety-orange/90 hover:scale-105 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-safety-orange"
-            >
-              Book a Service
-            </a>
-            <a
-              href="#"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg border border-white/35 bg-white/10 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/20 hover:gap-3"
+            {/* Rotating ring — conic-gradient disc spins behind 2px gap, clipped by overflow-hidden */}
+            <div className="relative w-full sm:w-auto overflow-hidden rounded-lg p-[2px]">
+
+              {/* Step 1: centering shell — keeps spinning inner div from affecting layout */}
+              <div
+                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px]"
+                aria-hidden="true"
+              >
+                {/* Step 2: the conic-gradient disc that rotates */}
+                <div
+                  className="h-full w-full animate-spin-ring"
+                  style={{
+                    background:
+                      'conic-gradient(from 0deg, transparent 0deg, transparent 200deg,' +
+                      ' #C9A24B 250deg, #FDE68A 290deg, #C9A24B 330deg, transparent 360deg)',
+                  }}
+                />
+              </div>
+
+              {/* Step 3: opaque fill masks the center — only the 2px border ring is visible */}
+              <div
+                className=" absolute inset-[2px] rounded-[6px] bg-neutral-900"
+                aria-hidden="true"
+              />
+
+              {/* Step 4: actual button sits on top */}
+              <button
+                type="button"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg   bg-white/30 px-8 py-3.5 text-sm  text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/20 hover:gap-3  "
+              >
+                Book a Service
+              </button>
+            </div>
+            <button
+              type="button"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg border border-white/35 bg-[#C9A24B]/50 px-8 py-3.5 text-sm  text-white backdrop-blur-sm transition-all duration-200 hover:bg-[#C9A24B]/70 hover:gap-3 ring-1 ring-white/20 "
             >
               View Services <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </a>
+            </button>
           </div>
         </div>
       </div>

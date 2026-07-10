@@ -2,7 +2,8 @@
 
 import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+
+import SpotlightCard from '@/components/sections/card';
 
 interface Feature {
   icon: ReactNode;
@@ -26,36 +27,27 @@ export const FeaturesGrid = ({ features }: FeaturesGridProps) => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Fitness Intelligence Suite
+            PRECISION. POWER.
+          </h2>
+          <h2 className="text-4xl sm:text-5xl font-bold font-serif text-[#C9A24B] mb-4">
+            PROVEN RESULTS.
           </h2>
           <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
-            Everything you need to coach, scale, and grow your fitness business all in one platform.
+            With years of industry experience, we deliver reliable excavation, site preparation, earthmoving, and transportation services. Our skilled operators and modern fleet ensure every project is completed safely, efficiently, and on schedule.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-col md:flex-row justify-center gap-6">
           {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -8, borderColor: '#10b981' }}
-              className="group p-8 bg-white/5 backdrop-blur-md border border-neutral-700 hover:border-emerald-500/50 rounded-xl transition duration-300 cursor-pointer"
-            >
-              <div className="mb-4 p-3 bg-neutral-900 rounded-lg w-fit group-hover:bg-emerald-500/20 transition">
-                {feature.icon}
+            <SpotlightCard key={index}>
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-neutral-50 mb-2">{feature.title}</h3>
+                <p className="text-neutral-400 text-sm leading-relaxed">{feature.description}</p>
               </div>
-              <h3 className="text-xl font-bold text-neutral-50 mb-2">{feature.title}</h3>
-              <p className="text-neutral-400 text-sm leading-relaxed">{feature.description}</p>
-              <div className="mt-4 flex items-center gap-2 text-emerald-400 opacity-0 group-hover:opacity-100 transition">
-                <span className="text-sm font-semibold">Learn more</span>
-                <ArrowRight className="w-4 h-4" />
-              </div>
-            </motion.div>
+            </SpotlightCard>
           ))}
         </div>
+
       </div>
     </section>
   );

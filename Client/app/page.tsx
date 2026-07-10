@@ -62,12 +62,7 @@ export default function Home() {
       description:
         'Real-time progress tracking with automated coaching cues and habit formation insights.',
     },
-    {
-      icon: <MessageSquare className="w-8 h-8 text-emerald-400" />,
-      title: 'Community & 1-1 Messaging',
-      description:
-        'Private coaching channels, group communities, and instant messaging for seamless client engagement.',
-    },
+   
   ];
 
   // Premium Tier Features

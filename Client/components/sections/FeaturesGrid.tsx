@@ -47,7 +47,6 @@ export const FeaturesGrid = ({ features }: FeaturesGridProps) => {
             </SpotlightCard>
           ))}
         </div>
-
       </div>
     </section>
   );
